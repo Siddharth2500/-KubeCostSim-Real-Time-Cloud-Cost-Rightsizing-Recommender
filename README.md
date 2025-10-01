@@ -1,5 +1,5 @@
 # 💰 KubeCostSim — Real-Time Cloud Cost & Rightsizing Recommender
-Python · Pandas · NumPy · Matplotlib
+Python · Pandas · NumPy · Matplotlib  
 
 KubeCostSim is a Python simulator for **real-time cloud cost analysis** and **rightsizing recommendations**.  
 It mimics tools like Kubecost or AWS Cost Explorer by simulating workload requests vs. actual usage, calculating waste, and suggesting optimal requests to reduce spend.  
@@ -8,25 +8,26 @@ Outputs include **CSV exports** and **charts** for quick analysis in Colab or lo
 ---
 
 ## ✨ What It Does
-- Simulates CPU/Memory **usage** for multiple workloads (steady, spiky, bursty)
-- Calculates **per-second cost** based on **requested** resources
-- Generates **rightsizing recommendations** using `avg`, `p90`, or `p95` usage
-- Exports **cost_samples.csv**, **rightsizing.csv**
-- Produces charts:
-  - **cost_timeseries.png** — cumulative cost proxy over time
-  - **cpu_requests_usage.png**, **mem_requests_usage.png** — request vs usage
-  - **requests_vs_usage.png** — combined placeholder
+- Simulates CPU/Memory **usage** for multiple workloads (steady, spiky, bursty)  
+- Calculates **per-second cost** based on **requested** resources  
+- Generates **rightsizing recommendations** using `avg`, `p90`, or `p95` usage  
+- Exports **cost_samples.csv**, **rightsizing.csv**  
+- Produces charts:  
+  - **cost_timeseries.png** — cumulative cost proxy over time  
+  - **cpu_requests_usage.png**, **mem_requests_usage.png** — request vs usage  
+  - **requests_vs_usage.png** — combined overview  
 
 ---
 
 ## 🛠 Tech & Languages
+
 | Layer        | Tech         | Notes                                      |
 |--------------|--------------|--------------------------------------------|
-| Language     | Python 3.10+ | Clean dataclasses + simple OOP            |
-| Data         | Pandas       | Aggregation, CSV export                   |
-| Math/Random  | NumPy        | Resource fluctuation & percentiles        |
-| Charts       | Matplotlib   | Cost and rightsizing visualizations       |
-| Runtime      | Colab/Local  | Works in Google Colab or your machine     |
+| Language     | Python 3.10+ | Clean dataclasses + simple OOP             |
+| Data         | Pandas       | Aggregation, CSV export                    |
+| Math/Random  | NumPy        | Resource fluctuation & percentiles         |
+| Charts       | Matplotlib   | Cost and rightsizing visualizations        |
+| Runtime      | Colab/Local  | Works in Google Colab or your machine      |
 
 ---
 
@@ -62,6 +63,7 @@ Copy code
 ---
 
 ## 📦 Repository Structure
+
 kubecostsim/
 ├─ app/
 │ ├─ workloads.py # Workload definition & simulation
@@ -76,16 +78,19 @@ kubecostsim/
 
 yaml
 Copy code
+
 > In Colab you can run everything in a single cell; the same files will be produced in the notebook’s working directory.
 
 ---
 
 ## ▶️ Run in Google Colab
+
 Paste the **single code cell** into Colab and run.  
 Then, in a new cell, explore outputs:
 
 ```python
 import pandas as pd
+
 print(pd.read_csv("cost_samples.csv").tail(6))
 print(pd.read_csv("rightsizing.csv"))
 Artifacts created:
@@ -184,6 +189,7 @@ Use actual price catalogs (AWS/GCP/Azure) per region & instance class
 Add SLO-aware policies (use p95/p99 and traffic windows)
 
 Include business rules (min replicas, burst tolerance)
+------
 
-👤 Author
+## 👤 Author
 Siddharth Raut — DevOps & Cloud Engineer
