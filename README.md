@@ -5,7 +5,7 @@ KubeCostSim is a Python simulator for **real-time cloud cost analysis** and **ri
 It mimics tools like Kubecost or AWS Cost Explorer by simulating workload requests vs. actual usage, calculating waste, and suggesting optimal requests to reduce spend.  
 Outputs include **CSV exports** and **charts** for quick analysis in Colab or locally.
 
----
+----
 
 ## ✨ What It Does
 - Simulates CPU/Memory **usage** for multiple workloads (steady, spiky, bursty)  
