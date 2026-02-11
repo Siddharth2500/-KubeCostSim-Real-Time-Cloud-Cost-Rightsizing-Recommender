@@ -1,4 +1,4 @@
-# 💰 KubeCostSim — Real-Time Cloud Cost & Rightsizing Recommender
+# 💰 KubeCostSim - Real-Time Cloud Cost & Rightsizing Recommender
 Python · Pandas · NumPy · Matplotlib  
 
 KubeCostSim is a Python simulator for **real-time cloud cost analysis** and **rightsizing recommendations**.  
