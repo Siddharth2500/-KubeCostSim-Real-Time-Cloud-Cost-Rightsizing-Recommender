@@ -60,7 +60,7 @@ analyze│rightsizing
 yaml
 Copy code
 
----
+-----
 
 ## 📦 Repository Structure
 
