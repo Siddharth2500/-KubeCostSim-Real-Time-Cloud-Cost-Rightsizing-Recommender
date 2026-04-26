@@ -29,7 +29,7 @@ Outputs include **CSV exports** and **charts** for quick analysis in Colab or lo
 | Charts       | Matplotlib   | Cost and rightsizing visualizations        |
 | Runtime      | Colab/Local  | Works in Google Colab or your machine      |
 
----
+------
 
 ## 🌐 Architecture
 
