@@ -189,7 +189,7 @@ Use actual price catalogs (AWS/GCP/Azure) per region & instance class
 Add SLO-aware policies (use p95/p99 and traffic windows)
 
 Include business rules (min replicas, burst tolerance)
-------
+---------
 
 ## 👤 Author
 Siddharth Raut — DevOps & Cloud Engineer
